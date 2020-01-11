@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-Light.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-LightItalic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-Thin.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-ThinItalic.ttf);
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+@import "utilities/variables";
+
+* { box-sizing: border-box; }
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.normal{ font-weight: normal }
+.bold{ font-weight: bold }
+.thin{ font-weight: 100 }
+.italic{ font-style: italic }
+
+.larger {
+    font-size: 2em;
+}
+
+.bg-cyan{ background-color: $custom-cyan; }
+.bg-pink{ background-color: $custom-pink; }
+.bg-black{ background-color: $custom-black; }
+.bg-gray{ background-color: $custom-gray; }
+
+.font-cyan{ color: $custom-cyan; }
+.font-pink{ color: $custom-pink; }
+.font-black{ color: $custom-black; }
+.font-gray{ color: $custom-gray; }
+
+.float-left{ float: left; }
+.float-right{ float: right; }
+
+.clear{ clear: both; }
+
+.center{
+  top: 50%!important;
+  left: 50%!important;
+  position: absolute!important;
+  -webkit-transform: translate(-50%, -50%)!important;
+     -moz-transform: translate(-50%, -50%)!important;
+      -ms-transform: translate(-50%, -50%)!important;
+       -o-transform: translate(-50%, -50%)!important;
+          transform: translate(-50%, -50%)!important;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.wrapper{
+  width: 100%;
+  padding: 0 5%;
+  position: relative;
+  margin: 0 auto;
+
+  max-width: 1633px;
+  min-width: 310px;
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: $font-color;
+  
+
+  a {
+    color: #1e6bb8;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: $mobiles-size) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: $desktops-size) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: $largescreens-size) {
+  /* Styles */
+}

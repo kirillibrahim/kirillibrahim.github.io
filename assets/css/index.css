@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* Variáveis */
+.main-content {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .main-content header.welcome-container {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-color: #FF2E63;
+    overflow: hidden;
+    -webkit-transition: background-color 3s;
+    -moz-transition: background-color 3s;
+    -o-transition: background-color 3s;
+    transition: background-color 3s; }
+    .main-content header.welcome-container canvas {
+      position: absolute;
+      top: 0; }
+    .main-content header.welcome-container .welcome-message {
+      margin: 210px 0 0 80px;
+      color: rgba(255, 255, 255, 0.95);
+      text-shadow: 0em 0.05em 0.02em rgba(0, 0, 0, 0.1);
+      font-size: 2em;
+      line-height: 1.5em; }
+      .main-content header.welcome-container .welcome-message h1, .main-content header.welcome-container .welcome-message h2, .main-content header.welcome-container .welcome-message p {
+        margin: 20px 0;
+        border-color: #FF2E63;
+        cursor: default; }
+  .main-content .title {
+    text-align: center;
+    font-weight: 100;
+    margin-top: 60px; }
+    .main-content .title hr {
+      width: 50px;
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #252A34;
+      margin: 20px auto 0 auto;
+      padding: 0; }
+  .main-content #sobre,
+  .main-content #conhecimentos {
+    overflow: hidden; }
+  .main-content #sobre {
+    text-align: center; }
+    .main-content #sobre img.perfil {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 60px auto;
+      /* opacity: 0.75; } */
+    .main-content #sobre p {
+      padding: 0 150px; }
+  .main-content .front-end,
+  .main-content .back-end,
+  .main-content .frameworks,
+  .main-content .outros {
+    margin-top: 50px;
+    position: relative; }
+  .main-content .front-end,
+  .main-content .frameworks {
+    background-color: #EEEEEE; }
+  .main-content #conhecimentos {
+    margin-top: 50px; }
+    .main-content #conhecimentos .categoria {
+      width: 20%;
+      height: 200px;
+      margin: 50px 0;
+      position: relative; }
+      .main-content #conhecimentos .categoria .cat-icon {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        border-radius: 50%; }
+        .main-content #conhecimentos .categoria .cat-icon i {
+          font-size: 4em;
+          color: rgba(255, 255, 255, 0.8); }
+          .main-content #conhecimentos .categoria .cat-icon i.large {
+            font-size: 4em;
+            -webkit-transform: translate(-80%, -60%) !important;
+            -moz-transform: translate(-80%, -60%) !important;
+            -ms-transform: translate(-80%, -60%) !important;
+            -o-transform: translate(-80%, -60%) !important;
+            transform: translate(-80%, -60%) !important; }
+          .main-content #conhecimentos .categoria .cat-icon i.small {
+            font-size: 2em;
+            -webkit-transform: translate(30%, -10%) !important;
+            -moz-transform: translate(30%, -10%) !important;
+            -ms-transform: translate(30%, -10%) !important;
+            -o-transform: translate(30%, -10%) !important;
+            transform: translate(30%, -10%) !important; }
+          .main-content #conhecimentos .categoria .cat-icon i.ion-ios-box {
+            color: #252A34; }
+    .main-content #conhecimentos .desc {
+      width: 80%;
+      padding: 20px;
+      margin: 50px 0; }
+      .main-content #conhecimentos .desc h4 {
+        margin: 0; }
+      .main-content #conhecimentos .desc.float-left {
+        text-align: right; }
+  .main-content #contrate {
+    margin-top: 140px; }
+    .main-content #contrate .video-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      background-color: #FF2E63;
+      padding: 50px 0; }
+      .main-content #contrate .video-container .wrapper {
+        color: rgba(255, 255, 255, 0.95);
+        text-shadow: 0em 0.05em 0.02em rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        line-height: 2.5em; }
+        .main-content #contrate .video-container .wrapper a {
+          color: rgba(255, 255, 255, 0.95);
+          text-shadow: 0em 0.05em 0.02em rgba(0, 0, 0, 0.2);
+          text-decoration: none; }
+          .main-content #contrate .video-container .wrapper a:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8); }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 680px) {
+  /* Styles */
+  .main-content header.welcome-container {
+    height: 480px; }
+    .main-content header.welcome-container .welcome-message {
+      margin: 150px 0 0 0px;
+      font-size: 1.2em;
+      line-height: 1.5em; }
+  .main-content #sobre img.perfil {
+    margin: 40px auto; }
+  .main-content #sobre p {
+    padding: 0px; }
+  .main-content #conhecimentos {
+    margin-top: 0px; }
+    .main-content #conhecimentos .front-end,
+    .main-content #conhecimentos .back-end,
+    .main-content #conhecimentos .frameworks,
+    .main-content #conhecimentos .outros {
+      margin-top: 0px; }
+    .main-content #conhecimentos .categoria {
+      width: 100%;
+      margin-bottom: 20px; }
+      .main-content #conhecimentos .categoria .cat-icon {
+        width: 190px;
+        height: 190px; }
+        .main-content #conhecimentos .categoria .cat-icon i {
+          font-size: 3em; }
+    .main-content #conhecimentos .desc {
+      width: 100%;
+      margin: 0; }
+  .main-content #contrate {
+    margin-top: 0px; }
+    .main-content #contrate .video-container video {
+      display: none; }
+    .main-content #contrate .video-container .wrapper {
+      font-size: 0.8em; } }
+
+/* tablets (portrait) ----------- */
+@media only screen and (min-width: 680px) and (max-width: 1224px) {
+  .main-content header.welcome-container .welcome-message {
+    margin: 200px 0 0 50px; }
+  .main-content #sobre p {
+    padding: 0px; }
+  .main-content #conhecimentos .categoria {
+    width: 30%; }
+  .main-content #conhecimentos .desc {
+    width: 70%; }
+  .main-content #contrate .video-container {
+    padding: 0px 0;
+    background-color: #252A34; } }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */ }
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */ }

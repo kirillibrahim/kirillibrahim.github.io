@@ -1,0 +1,327 @@
+@import "utilities/variables";
+
+.main-content{
+  width: 100%;
+  height: auto;
+  overflow:hidden;
+
+  header.welcome-container{
+    position: relative;
+  	width: 100%;
+  	height: 650px;
+  	background-color: $custom-pink;
+  	overflow: hidden;
+
+    -webkit-transition: background-color 3s;
+       -moz-transition: background-color 3s;
+         -o-transition: background-color 3s;
+            transition: background-color 3s;
+    
+    canvas{
+      position: absolute;
+      top: 0;
+    }
+
+    .welcome-message{
+      margin: 210px 0 0 80px;
+      color: rgba(255, 255, 255, 0.95);
+      text-shadow: 0em 0.05em 0.02em rgba(0, 0, 0, 0.1);
+      font-size: 2em;
+      line-height: 1.5em;
+
+      h1, h2, p{
+        margin: 20px 0;
+        border-color: $custom-pink;
+        cursor: default;
+      }
+    }
+  }
+
+  .title{
+    text-align: center;
+    font-weight: 100;
+    margin-top: 60px;
+    
+
+    hr{
+      width: 50px;
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid $custom-black;
+      margin: 20px auto 0 auto;
+      padding: 0; 
+    }
+  }
+
+  #sobre,
+  #conhecimentos{
+    overflow: hidden;
+  }
+
+  #sobre{
+    text-align: center;
+
+    img.perfil{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 60px auto;
+      opacity: 0.75;
+    }
+
+    p{
+      padding: 0 150px;
+    }
+  }
+
+  .front-end,
+  .back-end,
+  .frameworks,
+  .outros{
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .front-end,
+  .frameworks{
+    background-color: $background-ligh;
+  }
+
+  #conhecimentos{
+    margin-top: 50px;
+
+    .categoria{
+      width: 20%;
+      height: 200px;
+      margin: 50px 0;
+      position: relative;
+
+      .cat-icon{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        border-radius: 50%;
+
+        i{
+          font-size: 4em;
+          color: rgba(255, 255, 255, 0.8);
+
+          &.large{
+            font-size: 4em;
+            -webkit-transform: translate(-80%, -60%)!important;
+               -moz-transform: translate(-80%, -60%)!important;
+                -ms-transform: translate(-80%, -60%)!important;
+                 -o-transform: translate(-80%, -60%)!important;
+                    transform: translate(-80%, -60%)!important;
+          }
+          &.small{
+            font-size: 2em;
+            -webkit-transform: translate(30%, -10%)!important;
+               -moz-transform: translate(30%, -10%)!important;
+                -ms-transform: translate(30%, -10%)!important;
+                 -o-transform: translate(30%, -10%)!important;
+                    transform: translate(30%, -10%)!important;
+          }
+
+          &.ion-ios-box{
+            color: $custom-black;
+          }
+        }
+      }
+    }
+    .desc{
+      width: 80%;
+      // height: 200px;
+      padding: 20px;
+      margin: 50px 0;
+
+      h4{
+        margin: 0;
+      }
+
+      &.float-left{
+        text-align: right;
+      }
+    }
+  }  
+
+  #contrate{
+    margin-top: 140px;
+
+    .video-container{
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      background-color: $custom-pink;
+      padding: 50px 0;
+
+
+
+      video{
+        // margin-top: -300px;
+      }
+
+      .wrapper{
+        color: rgba(255, 255, 255, 0.95);
+        text-shadow: 0em 0.05em 0.02em rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        line-height: 2.5em;
+
+        a {
+          color: rgba(255, 255, 255, 0.95);
+          text-shadow: 0em 0.05em 0.02em rgba(0, 0, 0, 0.2);
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: $mobiles-size) {
+  /* Styles */
+  .main-content{
+    header.welcome-container{
+      height: 480px;
+
+      .welcome-message{
+        margin: 150px 0 0 0px;
+        font-size: 1.2em;
+        line-height: 1.5em;
+
+        h1, h2, p{
+          // margin: 20px 0;
+        }
+      }
+    }
+
+    #sobre{
+
+      img.perfil{
+        // width: 150px;
+        // height: 150px;
+        margin: 40px auto;
+      }
+
+      p{
+        padding: 0px;
+      }
+    }
+
+    #conhecimentos{
+      margin-top: 0px;
+
+      .front-end,
+      .back-end,
+      .frameworks,
+      .outros{
+        margin-top: 0px;
+      }
+
+      .categoria{
+        width: 100%;
+        margin-bottom: 20px;
+        .cat-icon{
+          width: 190px;
+          height: 190px;
+
+          i{
+          font-size: 3em;
+          }
+        }
+      }
+      .desc{
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    #contrate{
+      margin-top: 0px;
+
+      .video-container{
+
+        video{
+          // margin-top: -400px;
+          display: none;
+        }
+
+        .wrapper{
+          font-size: 0.8em;
+        }
+      }
+    }  
+  }
+}
+
+/* tablets (portrait) ----------- */
+@media only screen and (min-width: $tablets-size) and (max-width: $desktops-size) {
+  .main-content{
+    header.welcome-container{
+      // height: 480px;
+
+      .welcome-message{
+        margin: 200px 0 0 50px;
+        // font-size: 1.2em;
+        // line-height: 1.5em;
+
+        h1, h2, p{
+          // margin: 20px 0;
+        }
+      }
+    }
+    #sobre{
+
+      // img.perfil{
+      // }
+
+      p{
+        padding: 0px;
+      }
+    }
+
+    #conhecimentos{
+      .categoria{
+        width: 30%;
+      }
+      .desc{
+        width: 70%;
+      }
+    }
+
+    #contrate{
+      // margin-top: 0px;
+
+      .video-container{
+        padding: 0px 0;
+        background-color: $custom-black;
+        video{
+          // margin-top: -400px;
+          // display: none;
+        }
+
+        .wrapper{
+          // font-size: 0.8em;
+        }
+      }
+    } 
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: $desktops-size) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: $largescreens-size) {
+  /* Styles */
+}
