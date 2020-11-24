@@ -296,12 +296,10 @@ header.welcome-container:before {
     text-align: center;
 }
 .main-content #sobre img.perfil {
-    width: 270px;
+    width: 215px;
     height: 280px;
-    border-radius: 50%;
     display: block;
     margin: 30px auto;
-    /* opacity: .75; */
 }
 .main-content #sobre p {
     padding: 0 150px;
