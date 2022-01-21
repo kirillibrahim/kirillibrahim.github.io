@@ -46,7 +46,7 @@ footer .bitbucket-footer{
 
 footer .welcome-icons{
     background-color: #ffffff;
-    width: 200px;
+    width: 250px;
     /* height: 80px; */
     display: flex;
     justify-content: center;
@@ -257,7 +257,7 @@ header.welcome-container:before {
 }
 .main-content header.welcome-container .welcome-message .welcome-icons{
     background-color: #ffffff82;
-    width: 200px;
+    width: 250px;
     height: 80px;
     display: flex;
     justify-content: center;
