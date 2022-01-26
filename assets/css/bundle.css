@@ -53,6 +53,10 @@ footer .welcome-icons{
     align-items: center;
     border-radius: 5px;
 }
+footer .welcome-icons.marketing{
+    width: 170px;
+    height: 70px;
+}
 footer .welcome-icons a{
     margin-right: 15px;
 }
@@ -263,6 +267,10 @@ header.welcome-container:before {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+}
+.main-content header.welcome-container .welcome-message .welcome-icons.marketing{
+    width: 170px;
+    height: 60px;
 }
 .main-content header.welcome-container .welcome-message .welcome-icons a{
     margin-right: 15px;
